@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REJOIN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      height: 100vh;
+      background: url('cover.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    .hero .cta {
+      margin-top: 20px;
+    }
+    .cta button {
+      background-color: #0066cc;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .cta button:hover {
+      background-color: grey;
+    }
+    .features, .about {
+      padding: 10px 10px;
+      text-align: center;
+    }
+    .features h2, .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .features-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .feature {
+        flex: 1;
+        margin: 10px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .feature img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .feature h3 {
+      font-size: 1.75em;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 1.2em;
+      margin: 0 20px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+    }
+    .about-content {
+        max-width: 800px;
+        text-align: center;
+    }
+    .about-content p {
+      font-size: 1.2em;
+      margin: 10px 20px;
+      text-align: justify;
+    }
+    .team-member {
+      margin: 20px 0;
+    }
+    .team-member a {
+      margin: 0 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .team-member a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+        .feature-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature {
+            max-width: 90%;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">REJOIN</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cta">
+      <button onclick="window.location.href='https://your-deployed-app-link.com'">Launch App</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>REJOIN</h1>
+    <p>...Empowering Futures, revolutionizing job creation</p>
+    <div class="cta">
+      <button onclick="window.location.href='https://your-deployed-app-link.com'">Get Started</button>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="features-container">
+    <div class="feature">
+      <img src="1.jpg" alt="Feature 1">
+      <h3>Login</h3>
+      <p>The login page allows users to access their personalized REJOIN dashboard. By logging in, 
+        users can apply for jobs, search internships, connect with mentors, and track application 
+        progress. This secure page ensures your information is protected and your experience is customized 
+        to your career goals.</p>
+    </div>
+    <div class="feature">
+      <img src="3.jpg" alt="Feature 2">
+      <h3>Vacancies</h3>
+      <p>The vacancies page lists current job openings tailored for recent graduates. Here, users can explore 
+        various positions across industries, apply directly through the app, and save opportunities for later. 
+        This section is regularly updated to provide the latest job listings, helping users find the perfect 
+        start to their careers.</p>
+    </div>
+    <div class="feature">
+      <img src="4.jpg" alt="Feature 3">
+      <h3>Careers</h3>
+      <p>The careers page provides resources and guidance for building a successful career. Users can find articles, 
+        tips, and advice on resume writing, interview preparation, and professional development. This section is 
+        designed to help recent graduates navigate their career paths, gain industry insights, and achieve their 
+        professional goals.</p>
+    </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About REJOIN</h2>
+    <div class="about-content">
+      <p>Welcome to REJOIN, the bridge between academic achievement and professional success. Our app is designed with recent graduates in mind, aiming 
+        to connect you with job opportunities and internships that will set the stage for a thriving career. We understand that transitioning from academia 
+        into the workforce can be daunting, which is why REJOIN is here to facilitate a smooth and seamless entry into your professional journey.</p>
+      <p>REJOIN is also a portfolio project for ALX Software Engineering Program. You can check out the full project on <a href="https://github.com/C4Confidence/Rejoin.git">GitHub</a>.</p>
+    </div>
+    <div class="team-member">
+      <h3>Confidence Aigbedion</h3>
+      <a href="https://linkedin.com/in/confidence-aigbedion" target="_blank">LinkedIn</a>
+      <a href="https://github.com/C4Confidence" target="_blank">GitHub</a>
+      <a href="https://twitter.com/CConfidence_" target="_blank">Twitter</a>
+      <a href="https://sites.google.com/view/confid3nce/home?authuser=0" target="_blank">Portfolio</a>
+    </div>
+  </section>
+
+</body>
+</html>
